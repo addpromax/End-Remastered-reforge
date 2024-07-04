@@ -3,9 +3,11 @@
   "package": "com.teamremastered.endrem.mixin",
   "compatibilityLevel": "JAVA_17",
   "refmap": "endrem.refmap.json",
+  "plugin": "com.teamremastered.endrem.mixin.EndRemasteredMixinPlugin",
   "mixins": [
     "PlayerEnchantMixin",
-    "StrongholdPiecesMixin"
+    "StrongholdPiecesMixin",
+    "compat.MatrixEnchantingMenuMixin"
   ],
   "minVersion": "0.8"
 }
