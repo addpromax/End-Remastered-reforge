@@ -77,11 +77,11 @@ dependencies {
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     // Quark (Contains Matrix Enchanting)
-    implementation fg.deobf("curse.maven:quark-243121:5418252")
+    compileOnly fg.deobf("curse.maven:quark-243121:5418252")
     // Zeta (dep of Quark)
-    implementation fg.deobf("curse.maven:zeta-968868:5418213")
+    compileOnly fg.deobf("curse.maven:zeta-968868:5418213")
     // Quark Oddities (Actually activates Matrix Enchanting)
-    implementation fg.deobf("curse.maven:oddities-301051:5070502")
+    compileOnly fg.deobf("curse.maven:oddities-301051:5070502")
 }
 
 mixin {

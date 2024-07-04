@@ -10,7 +10,7 @@ import java.util.Random;
 public class CrypticEyeDistribution {
     public static void rollForCrypticEye(Player player){
         Random random = new Random();
-        int maxValue = 1;
+        int maxValue = 120;
         int randomNumber = random.nextInt(maxValue);
         if (ERConfig.IS_CRYPTIC_EYE_OBTAINABLE.getRaw() && !player.level().isClientSide && player != null) {
             if (randomNumber == maxValue - 1) {
