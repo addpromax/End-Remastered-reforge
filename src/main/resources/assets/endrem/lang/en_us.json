@@ -54,7 +54,7 @@
 
   "block.endrem.ender_eye.throw_warning": "This eye doesn't know where to go",
   "block.endrem.ender_eye.use_warning": "This eye doesn't want to be used",
-  "block.endrem.custom_eye.place": "This eye is can't be placed",
+  "block.endrem.custom_eye.place": "This eye can't be placed",
   "block.endrem.custom_eye.frame_has_eye": "This frame already has an eye",
   "block.endrem.custom_eye.broken": "This portal is not built properly",
 

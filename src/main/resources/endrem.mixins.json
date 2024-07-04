@@ -5,6 +5,7 @@
   "refmap": "endrem.refmap.json",
   "plugin": "com.teamremastered.endrem.mixin.EndRemasteredMixinPlugin",
   "mixins": [
+    "EnderEyeItemMixin",
     "PlayerEnchantMixin",
     "StrongholdPiecesMixin",
     "compat.MatrixEnchantingMenuMixin"
