@@ -63,9 +63,25 @@ sourceSets.main.resources {
     srcDir 'src/generated/resources'
 }
 
+repositories {
+    maven {
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+}
+
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+
+    // Quark (Contains Matrix Enchanting)
+    compileOnly fg.deobf("curse.maven:quark-243121:5418252")
+    // Zeta (dep of Quark)
+    compileOnly fg.deobf("curse.maven:zeta-968868:5418213")
+    // Quark Oddities (Actually activates Matrix Enchanting)
+    compileOnly fg.deobf("curse.maven:oddities-301051:5070502")
 }
 
 mixin {
