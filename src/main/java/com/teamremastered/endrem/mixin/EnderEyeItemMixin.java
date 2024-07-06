@@ -10,6 +10,7 @@ import net.minecraft.world.item.EnderEyeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Blocks;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -20,11 +21,13 @@ public class EnderEyeItemMixin {
     @Inject(method = "useOn", at = @At("HEAD"), cancellable = true)
     private void endrem$useOn(UseOnContext ctx, CallbackInfoReturnable<InteractionResult> cir){
         if (!ERConfig.USE_ENDER_EYE.getRaw()){
-            Player player = ctx.getPlayer();
-            if (player != null) {
-                player.displayClientMessage(Component.translatable("block.endrem.ender_eye.use_warning"), true);
+            if (ctx.getLevel().getBlockState(ctx.getClickedPos()).is(Blocks.END_PORTAL_FRAME)) {
+                Player player = ctx.getPlayer();
+                if (player != null) {
+                    player.displayClientMessage(Component.translatable("block.endrem.ender_eye.use_warning"), true);
+                }
+                cir.setReturnValue(InteractionResult.PASS);
             }
-            cir.setReturnValue(InteractionResult.PASS);
         }
     }
 
