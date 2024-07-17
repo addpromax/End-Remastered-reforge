@@ -14,7 +14,7 @@ public class CrypticEyeDistribution {
         int randomNumber = random.nextInt(maxValue);
         if (ERConfig.IS_CRYPTIC_EYE_OBTAINABLE.getRaw() && !player.level().isClientSide && player != null) {
             if (randomNumber == maxValue - 1) {
-                player.getInventory().add(new ItemStack(ERItems.CRYPTIC_EYE.get()));
+                player.getInventory().add(new ItemStack(ERItems.BLACK_EYE.get()));
             }
         }
     }

@@ -20,30 +20,32 @@ public class ERTabs {
     public static final RegistryObject<CreativeModeTab> EYES_TAB = TABS.register("endrem_tab",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.endrem.endrem_tab"))
-                    .icon(() -> new ItemStack(ERItems.EXOTIC_EYE.get()))
+                    .icon(() -> new ItemStack(ERItems.BLACK_EYE.get()))
                     .displayItems((featureFlags, output) -> {
+                        // Register normal eye
                         output.accept(ERItems.BLACK_EYE.get());
-                        output.accept(ERItems.COLD_EYE.get());
-                        output.accept(ERItems.CORRUPTED_EYE.get());
-                        output.accept(ERItems.LOST_EYE.get());
                         output.accept(ERItems.NETHER_EYE.get());
                         output.accept(ERItems.OLD_EYE.get());
                         output.accept(ERItems.ROGUE_EYE.get());
                         output.accept(ERItems.CURSED_EYE.get());
                         output.accept(ERItems.EVIL_EYE.get());
-
-                        output.accept(ERItems.GUARDIAN_EYE.get());
-                        output.accept(ERItems.MAGICAL_EYE.get());
                         output.accept(ERItems.WITHER_EYE.get());
-
-                        output.accept(ERItems.WITCH_EYE.get());
-                        output.accept(ERItems.UNDEAD_EYE.get());
-                        output.accept(ERItems.EXOTIC_EYE.get());
-
-                        output.accept(ERItems.CRYPTIC_EYE.get());
-
                         output.accept(ERItems.WITCH_PUPIL.get());
                         output.accept(ERItems.UNDEAD_SOUL.get());
+                        // Register extra eye
+                        output.accept(ERItems.SHANDIAN_EYE.get());
+                        output.accept(ERItems.YANJIANG_EYE.get());
+                        output.accept(ERItems.XIAOCHOU_EYE.get());
+                        output.accept(ERItems.LVHEI_EYE.get());
+                        output.accept(ERItems.SHANYAO_EYE.get());
+                        output.accept(ERItems.ZONGHEI_EYE.get());
+                        output.accept(ERItems.JIXIE_EYE.get());
+                        output.accept(ERItems.ZUANSHI_EYE.get());
+                        output.accept(ERItems.FANGXING_EYE.get());
+                        output.accept(ERItems.HUANGJING_EYE.get());
+                        output.accept(ERItems.LVBAOSHI_EYE.get());
+                        output.accept(ERItems.YUANGU_EYE.get());
+                        output.accept(ERItems.FENGMI_EYE.get());
                         System.out.println("Items Registered");
                     } )
                     .build()

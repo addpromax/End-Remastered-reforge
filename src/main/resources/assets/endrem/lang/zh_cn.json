@@ -35,6 +35,44 @@
   "item.endrem.witch_eye.description": "据说它看到了失传的古老酿造配方",
   "item.endrem.witch_pupil": "巫瞳",
 
+  "item.endrem.shandian_eye": "螳螂眼",
+  "item.endrem.shandian_eye.description": "从某个BOSS上掉落的物品",
+
+  "item.endrem.yanjiang_eye": "恐怖眼",
+  "item.endrem.yanjiang_eye.description": "从某个BOSS上掉落的物品",
+
+  "item.endrem.xiaochou_eye": "嘎嘎",
+  "item.endrem.xiaochou_eye.description": "从某个BOSS上掉落的物品",
+
+  "item.endrem.lvhei_eye": "克苏鲁之眼",
+  "item.endrem.lvhei_eye.description": "从某个BOSS上掉落的物品",
+
+  "item.endrem.shanyao_eye": "冰霜之眼",
+  "item.endrem.shanyao_eye.description": "从某个BOSS上掉落的物品",
+
+  "item.endrem.zonghei_eye": "太阳眼",
+  "item.endrem.zonghei_eye.description": "从某个BOSS上掉落的物品",
+
+  "item.endrem.jixie_eye": "钢铁之眼",
+  "item.endrem.jixie_eye.description": "从某个BOSS上掉落的物品",
+
+  "item.endrem.zuanshi_eye": "女巫眼",
+  "item.endrem.zuanshi_eye.description": "从某个BOSS上掉落的物品",
+
+  "item.endrem.fangxing_eye": "守卫者之眼",
+  "item.endrem.fangxing_eye.description": "从某个BOSS上掉落的物品",
+
+  "item.endrem.huangjing_eye": "狗头眼",
+  "item.endrem.huangjing_eye.description": "从某个BOSS上掉落的物品",
+
+  "item.endrem.lvbaoshi_eye": "十重眼",
+  "item.endrem.lvbaoshi_eye.description": "从某个BOSS上掉落的物品",
+
+  "item.endrem.yuangu_eye": "幽魂眼",
+  "item.endrem.yuangu_eye.description": "从某个BOSS上掉落的物品",
+
+  "item.endrem.fengmi_eye": "门卫",
+  "item.endrem.fengmi_eye.description": "从某个BOSS上掉落的物品",
 
   "block.endrem.ancient_portal_frame": "空传送门框架",
 
@@ -77,5 +115,7 @@
   "advancements.main.guardian_eye.description": "获得一颗守卫者之眼",
 
   "advancements.main.witch_eye.title": "不给糖就捣蛋？",
-  "advancements.main.witch_eye.description": "获得一颗女巫之眼"
+  "advancements.main.witch_eye.description": "获得一颗女巫之眼",
+
+  "itemGroup.endrem.endrem_tab": "末地重置"
 }
